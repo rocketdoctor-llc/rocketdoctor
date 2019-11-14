@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Navbar, Container,Button} from 'react-bootstrap';
+import {Navbar, Container,Button,Dropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LogoImage from '../../images/logo.svg';
 import { NavBarComp, OuterHeader } from './style' ;
@@ -29,6 +29,18 @@ const Header = (props) => {
 				</Navbar.Collapse>
 			</Navbar>
 		</Container>
+		{/* <Dropdown>
+			<Dropdown.Toggle id="dropdown-custom-1"><span className="glyphicon glyphicon-align-justify"></span></Dropdown.Toggle>
+			<Dropdown.Menu className="super-colors">
+				<Dropdown.Item eventKey="1">Action</Dropdown.Item>
+				<Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+				<Dropdown.Item eventKey="3" active>
+					Active Item
+				</Dropdown.Item>
+				<Dropdown.Divider />
+				<Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+			</Dropdown.Menu>
+		</Dropdown> */}
 	</OuterHeader>
   )
 }
