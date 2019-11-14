@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
 	<OuterHeader>
 		<Container fluid={false}>
-			<Navbar>
+			<Navbar expand="lg">
 				<Navbar.Brand href="/">
 					<img src={LogoImage} alt=""/>
 				</Navbar.Brand>

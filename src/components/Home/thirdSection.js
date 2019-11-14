@@ -13,22 +13,22 @@ const ThirdSection = () => {
           </Col>
         </Row>
         <Row className="partner-bottom">
-          <Col xs={2} className="text-center">
+          <Col xs={12} xl={2} className="text-center">
             <img src={PartnerLogo} alt="PartnerLogo" />
           </Col>
-          <Col xs={2} className="text-center">
+          <Col xs={12} xl={2} className="text-center">
             <img src={PartnerLogo} alt="PartnerLogo" />
           </Col>
-          <Col xs={2} className="text-center">
+          <Col xs={12} xl={2} className="text-center">
             <img src={PartnerLogo} alt="PartnerLogo" />
           </Col>
-          <Col xs={2} className="text-center">
+          <Col xs={12} xl={2} className="text-center">
             <img src={PartnerLogo} alt="PartnerLogo" />
           </Col>
-          <Col xs={2} className="text-center">
+          <Col xs={12} xl={2} className="text-center">
             <img src={PartnerLogo} alt="PartnerLogo" />
           </Col>
-          <Col xs={2} className="text-center">
+          <Col xs={12} xl={2} className="text-center">
             <img src={PartnerLogo} alt="PartnerLogo" />
           </Col>
         </Row>

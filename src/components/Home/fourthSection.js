@@ -11,7 +11,7 @@ const FourthSection = () => {
             </Col>
         </Row>
         <Row className="why-bottom">
-            <Col xs={4} className="text-center mb-3">
+            <Col xs={12} xl={4} className="text-center mb-3">
                 <div className="stop-box">
                     <img src={Stopwatch} alt="ChatIcon" />
                     <div>
@@ -19,7 +19,7 @@ const FourthSection = () => {
                     </div>                    
                 </div>    
             </Col>
-            <Col  xs={4} className="text-center mb-3">
+            <Col xs={12} xl={4} className="text-center mb-3">
                 <div className="stop-box">
                     <img src={Stopwatch} alt="ChatIcon" />
                     <div>
@@ -27,7 +27,7 @@ const FourthSection = () => {
                     </div>
                 </div>
             </Col>
-            <Col  xs={4} className="text-center mb-3">
+            <Col xs={12} xl={4} className="text-center mb-3">
                 <div className="stop-box">
                     <img src={Stopwatch} alt="ChatIcon" />
                     <div>
@@ -35,7 +35,7 @@ const FourthSection = () => {
                     </div>
                 </div>
             </Col>
-            <Col  xs={4} className="text-center mb-3">
+            <Col xs={12} xl={4} className="text-center mb-3">
                 <div className="stop-box">
                     <img src={Stopwatch} alt="ChatIcon" />
                     <div>
@@ -43,7 +43,7 @@ const FourthSection = () => {
                     </div>
                 </div>
             </Col>
-            <Col  xs={4} className="text-center mb-3">
+            <Col xs={12} xl={4} className="text-center mb-3">
                 <div className="stop-box">
                     <img src={Stopwatch} alt="ChatIcon" />
                     <div>
@@ -51,7 +51,7 @@ const FourthSection = () => {
                     </div>
                 </div>
             </Col>
-            <Col  xs={4} className="text-center mb-3">
+            <Col xs={12} xl={4} className="text-center mb-3">
                 <div className="stop-box">
                     <img src={Stopwatch} alt="ChatIcon" />
                     <div>
