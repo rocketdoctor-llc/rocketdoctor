@@ -1,7 +1,9 @@
 import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col, Image, Button, Form } from 'react-bootstrap';
+import { Field, reduxForm } from 'redux-form';
+import FooterLogo from 'images/footerlogo.svg';
+import { renderField } from 'utils/formUtils/';
 import { FooterDivSection } from './style';
-import FooterLogo from '../../images/footerlogo.svg';
 
 const Footer = (props) => (
   <>
@@ -18,9 +20,15 @@ const Footer = (props) => (
             <li className="list-item"><a href="/about-us" className="footer-link">About us</a><a href="/careers" className="footer-link">Careers</a><a href="/contact-us" className="footer-link">Contact Us</a><a href="/code-of-conduct" className="footer-link">Code of Conduct</a>
             </li>
           </ul>
-          <div>
-            Form will be display here
-          </div>
+          <Form>
+            <Field
+              name="location"
+              type="select"
+              component={renderField}
+              placeholder="Enter Your Email"
+            />
+            <Button>Subscribe Newsletter</Button>
+          </Form>
         </Col>
         <Col md={{ span: 12 }}>         
           <div>
@@ -32,4 +40,6 @@ const Footer = (props) => (
   </>
 )
 
-export default Footer
+export default (reduxForm({
+  form: 'subscribe',
+})(Footer));

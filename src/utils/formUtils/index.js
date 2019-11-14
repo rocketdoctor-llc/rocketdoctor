@@ -7,9 +7,7 @@
 import React from 'react';
 import moment from 'moment';
 import momentLocaliser from 'react-widgets-moment';
-import { DateTimePicker, DropdownList } from 'react-widgets';
-import 'react-widgets/dist/css/react-widgets.css';
-import { Label, Input, FormGroup } from 'reactstrap';
+import { FormLabel, FormControl, FormGroup, DropdownButton } from 'react-bootstrap';
 
 momentLocaliser(moment);
 
@@ -49,81 +47,8 @@ const renderField = (props) => {
 
   return (
     <FormGroup className="force-mb-10" style={{ width: '100%' }}>
-      <Label className="force_mb-5" for={name}>{label || ''}</Label>
-      <Input {...input} disabled={disabled || false} type={type} className={validationError || (touched && error) ? 'validation-error' : ''} placeholder={placeholder || ''} />
-      <Validations
-        props={{
-          touched,
-          error,
-          validationError,
-          warning,
-        }}
-      />
-    </FormGroup>
-  );
-};
-
-const renderDatePicker = (props) => {
-  const {
-    input: { onChange, value },
-    label,
-    disabled,
-    formatType,
-    timeFormating,
-    name,
-    step,
-    time,
-    date,
-    placeholder,
-    validationError,
-    meta: { touched, error, warning },
-  } = props;
-
-  return (
-    <FormGroup className="force-mb-10">
-      <Label className=" force_mb-5" for={name}>{label || ''}</Label>
-      <DateTimePicker
-        onChange={onChange}
-        format={formatType}
-        time={time}
-        date={date}
-        step={step || 5}
-        timeFormat={timeFormating}
-        disabled={disabled || false}
-        defaultValue={null}
-        placeholder={placeholder || ''}
-        className={validationError || (touched && error) ? 'validation-error' : ''}
-        value={!value ? null : new Date(value)}
-        min={null}
-      />
-      <Validations
-        props={{
-          touched,
-          error,
-          validationError,
-          warning,
-        }}
-      />
-    </FormGroup>
-  );
-};
-
-const renderCheckbox = (props) => {
-  const {
-    input,
-    placeholder,
-    validationError,
-    checked,
-    meta: { touched, error, warning },
-  } = props;
-
-  return (
-    <FormGroup check>
-      <Label check>
-        <Input {...input} checked={checked} type="checkbox" />
-        {' '}
-        {placeholder}
-      </Label>
+      <FormLabel className="force_mb-5" for={name}>{label || ''}</FormLabel>
+      <FormControl {...input} disabled={disabled || false} type={type} className={validationError || (touched && error) ? 'validation-error' : ''} placeholder={placeholder || ''} />
       <Validations
         props={{
           touched,
@@ -143,24 +68,26 @@ const renderSelectField = (props) => {
     validationError,
     name,
     options,
-    disabled,
-    defaultSelected,
+    // disabled,
+    // defaultSelected,
     placeholder,
     meta: { touched, error, warning },
   } = props;
 
   return (
     <FormGroup>
-      <Label className="force_mb-5" for={name}>{label || ''}</Label>
-      <DropdownList
-        {...input}
-        data={options || []}
-        defaultValue={defaultSelected}
-        name={name}
-        className={validationError || (touched && error) ? 'validation-error' : ''}
-        disabled={disabled || false}
-        placeholder={placeholder || null}
-      />
+      <FormLabel className="force_mb-5" for={name}>{label || ''}</FormLabel>
+      <FormControl
+        as="select"
+        value={input.value}
+        onChange={input.onChange} 
+      >
+        {placeholder && 
+          <option value="">{placeholder}</option>}
+        {options && options.map((option, index) => (
+            <option key={index}>{option}</option>
+        ))}
+      </FormControl>
       <Validations
         props={{
           touched,
@@ -169,13 +96,97 @@ const renderSelectField = (props) => {
           warning,
         }}
       />
+      {/* <DropdownButton
+        {...input}
+        data={options || []}
+        defaultValue={defaultSelected}
+        name={name}
+        className={validationError || (touched && error) ? 'validation-error' : ''}
+        disabled={disabled || false}
+        placeholder={placeholder || null}
+      /> */}     
     </FormGroup>
   );
 };
 
+// const renderDatePicker = (props) => {
+//   const {
+//     input: { onChange, value },
+//     label,
+//     disabled,
+//     formatType,
+//     timeFormating,
+//     name,
+//     step,
+//     time,
+//     date,
+//     placeholder,
+//     validationError,
+//     meta: { touched, error, warning },
+//   } = props;
+
+//   return (
+//     <FormGroup className="force-mb-10">
+//       <Label className=" force_mb-5" for={name}>{label || ''}</Label>
+//       <DateTimePicker
+//         onChange={onChange}
+//         format={formatType}
+//         time={time}
+//         date={date}
+//         step={step || 5}
+//         timeFormat={timeFormating}
+//         disabled={disabled || false}
+//         defaultValue={null}
+//         placeholder={placeholder || ''}
+//         className={validationError || (touched && error) ? 'validation-error' : ''}
+//         value={!value ? null : new Date(value)}
+//         min={null}
+//       />
+//       <Validations
+//         props={{
+//           touched,
+//           error,
+//           validationError,
+//           warning,
+//         }}
+//       />
+//     </FormGroup>
+//   );
+// };
+
+// const renderCheckbox = (props) => {
+//   const {
+//     input,
+//     placeholder,
+//     validationError,
+//     checked,
+//     meta: { touched, error, warning },
+//   } = props;
+
+//   return (
+//     <FormGroup check>
+//       <Label check>
+//         <Input {...input} checked={checked} type="checkbox" />
+//         {' '}
+//         {placeholder}
+//       </Label>
+//       <Validations
+//         props={{
+//           touched,
+//           error,
+//           validationError,
+//           warning,
+//         }}
+//       />
+//     </FormGroup>
+//   );
+// };
+
+
+
 export {
   renderField,
   renderSelectField,
-  renderCheckbox,
-  renderDatePicker,
+  // renderCheckbox,
+  // renderDatePicker,
 };
