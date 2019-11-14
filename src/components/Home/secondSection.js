@@ -9,7 +9,7 @@ const SecondSection = () => {
     return (
       <>
         <Container>
-          <Row className="work-head">
+          <Row className="text-head-home">
             <Col xs={"12"} className="text-center">
                 <h2 className="text-center text-heading">How It Works</h2>
             </Col>

@@ -5,7 +5,7 @@ import Stopwatch from './../../images/stopwatch.svg';
 const FourthSection = () => {
     return (
       <Container>
-        <Row className="why-head">
+        <Row className="text-head-home">
             <Col xs={"12"} className="text-center mb-3">
                 <h2 className="text-center text-heading">Why to Choose RocketDoctor App</h2>
             </Col>

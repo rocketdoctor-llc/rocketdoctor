@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { ThirdDivSection } from './style';
 import PartnerLogo from './../../images/partnerLogo.svg';
 
@@ -7,7 +7,7 @@ import PartnerLogo from './../../images/partnerLogo.svg';
 const ThirdSection = () => {
     return (
       <ThirdDivSection fluid>
-        <Row className="partner-head">
+        <Row className="text-head-home">
           <Col xs={"12"} className="text-center">
             <h2 className="text-center text-heading">Our Trusted Partners</h2>
           </Col>

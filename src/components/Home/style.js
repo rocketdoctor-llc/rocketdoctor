@@ -39,3 +39,11 @@ export const ThirdDivSection = styled(Container)`
       opacity: 0.9;
     }
 `;
+export const FifthDivSection = styled(Container)`
+  background: #F9F9F9;
+`;
+
+export const SixDivSection = styled.div`
+  height: 511px;
+  background: #FFFFFF;
+`;

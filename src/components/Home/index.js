@@ -5,6 +5,8 @@ import FirstSection from "./firstSection";
 import SecondSection from "./secondSection";
 import ThirdSection from "./thirdSection";
 import FourthSection from "./fourthSection";
+import FifthSection from "./fifthSection";
+import SixSection from "./sixSection";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
+      <SixSection />
     </Layout>
   )
 }

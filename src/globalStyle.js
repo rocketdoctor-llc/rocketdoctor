@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
         text-transform: uppercase;
         color: #FFFFFF;
     }
-    .work-head {
+    .text-head-home {
         padding: 65px 0 0;
         margin-left: 0!important;
         margin-right: 0!important;
@@ -38,19 +38,9 @@ const GlobalStyle = createGlobalStyle`
     .text-heading {
         margin-bottom: 0px;
     }
-    .partner-head {
-        padding: 65px 0 0;
-        margin-left: 0!important;
-        margin-right: 0!important;
-    }
     .partner-bottom {
         margin-top: 60px;
         padding-bottom: 80px;
-    }
-    .why-head {
-        padding: 65px 0 0;
-        margin-left: 0!important;
-        margin-right: 0!important;
     }
     .why-bottom {
         margin-top: 60px;
@@ -62,8 +52,7 @@ const GlobalStyle = createGlobalStyle`
         background: #F9F9F9;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-    }
-
+    }  
 `;
 
 export default GlobalStyle;
