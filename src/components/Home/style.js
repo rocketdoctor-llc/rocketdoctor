@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SlideView from '../../images/slideView.svg';
+import SlideView from '../../images/hometop.png';
 import TrustedBackground from '../../images/trustedBackground.svg';
 import { Container } from 'react-bootstrap';
 
