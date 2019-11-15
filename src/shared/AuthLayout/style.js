@@ -33,7 +33,6 @@ export const AuthWrapper = styled.div`
                 font-family: 'Hind', sans-serif;
                 font-size: 18px;
                 background: transparent;
-
                 &:focus,
                 &:hover {
                     box-shadow: none;

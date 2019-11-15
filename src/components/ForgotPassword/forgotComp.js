@@ -4,12 +4,13 @@ import { Field, reduxForm, Form } from 'redux-form';
 import { renderField } from 'utils/formUtils';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import AuthLogoComp from 'shared/AuthLayout/authLogo';
 import { ForGotBox } from './style';
 
 const ForGotComp = () => {
   return (
     <>
-      	<img src={AuthLogo} alt="auth-logo" />
+      	<AuthLogoComp />
 		<ForGotBox>
 			<Form>
 				<h1>FORGOT  PASSWORD</h1>

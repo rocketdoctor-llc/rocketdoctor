@@ -1,15 +1,16 @@
 import React from 'react'
-import AuthLogo from 'images/authlogo.svg';
 import { Field, reduxForm, Form } from 'redux-form';
 import { renderField } from 'utils/formUtils';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import AuthLogoComp from 'shared/AuthLayout/authLogo';
 import { SignInBox } from './style';
+
 const SignIn = () => {
   return (
     <>
-      <img src={AuthLogo} alt="auth-logo" />
-      	<SignInBox>
+      <AuthLogoComp />
+      <SignInBox>
 			<Form>
 				<h1>Login</h1>
 				<Field

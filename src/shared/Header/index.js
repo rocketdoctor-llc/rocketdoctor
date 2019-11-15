@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Navbar, Container,Button,Dropdown} from 'react-bootstrap';
+import {Navbar, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LogoImage from '../../images/logo.svg';
 import { NavBarComp, OuterHeader } from './style' ;
@@ -10,7 +10,7 @@ const Header = (props) => {
 		<Container fluid={false}>
 			<Navbar expand="lg">
 				<Navbar.Brand href="/">
-					<img src={LogoImage} alt=""/>
+					<Link to="/"><img src={LogoImage} alt=""/></Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav" className="">
