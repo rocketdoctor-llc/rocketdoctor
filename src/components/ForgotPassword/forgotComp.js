@@ -1,5 +1,4 @@
 import React from 'react'
-import AuthLogo from 'images/authlogo.svg';
 import { Field, reduxForm, Form } from 'redux-form';
 import { renderField } from 'utils/formUtils';
 import { Button } from 'react-bootstrap';
