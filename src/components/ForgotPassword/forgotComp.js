@@ -13,7 +13,7 @@ const ForGotComp = () => {
 		<ForGotBox>
 			<Form>
 				<h1>FORGOT  PASSWORD</h1>
-				<p>Enter Your Email Below to get a reset password link</p>
+				<p className="signUpLink forgot">Enter Your Email Below to get a reset password link</p>
 				<Field
 					name="email"
 					type="text"
@@ -23,7 +23,7 @@ const ForGotComp = () => {
 				<Button className="outline-dark-btn">Submit</Button>
 			</Form>
 		</ForGotBox>
-		<p>Remember your Password <Link to="/login">SIGN IN</Link></p>
+		<p className="signUpLink">Remember your Password <Link to="/login">SIGN IN</Link></p>
     </>
   )
 }

@@ -10,7 +10,7 @@ const SignUpComp = () => {
   return (
     <>
       <img src={AuthLogo} alt="auth-logo" />
-      	<SignUpBox>
+      	<SignUpBox className="signUpForm">
 			<Form>
 				<h1>SIGN UP</h1>
 				<Field
@@ -31,9 +31,9 @@ const SignUpComp = () => {
 					component={renderField}
 					placeholder="Your Contact Number"
 				/>
-				<Button className="outline-dark-btn">Sign UP</Button>
+				<Button className="outline-dark-btn signUpBtn">Sign UP</Button>
 			</Form>
-			<p>Not a Member, make a account here <Link to="/login" className="">Sign In</Link></p>
+			<p className="signUpLink">Not a Member, make a account here <Link to="/login" className="">Sign In</Link></p>
       	</SignUpBox>
     </>
   )

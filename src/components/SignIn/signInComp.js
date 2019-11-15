@@ -23,13 +23,14 @@ const SignIn = () => {
 					type="password"
 					component={renderField}
 					placeholder="Password"
+					className="removeMargin"
 				/>
 				<div className="text-right">
-					<Link to="/forgot-password">forgot password?</Link>
+					<Link to="/forgot-password" className="forgot-link">forgot password?</Link>
 				</div>
 				<Button className="outline-dark-btn">Join Now</Button>
 			</Form>
-			<p>Not a Member, make a account here <Link to="/registration">Sign UP</Link></p>
+			<p className="signUpLink">Not a Member, make a account here <Link to="/registration">Sign UP</Link></p>
       	</SignInBox>
     </>
   )

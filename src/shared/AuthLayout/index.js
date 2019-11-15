@@ -8,9 +8,9 @@ const AuthLayout = (props) => {
     <AuthWrapper className="align-items-center">
 		<Container>
 			<Row className="justify-content-center">
-				<Col xs={{ span: "8"}}>
+				<Col xs={{ span: "12"}} xl={10}>
 					<CardDeck>
-						<Card>
+						<Card className="loginLeft">
 							<Card.Body>
 								{props.children}
 							</Card.Body>
