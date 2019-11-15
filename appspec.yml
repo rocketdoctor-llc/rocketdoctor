@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/rocketdoctor-react/
+permissions:
+  - object: /var/www/rocketdoctor-react/
+    owner: ec2-user
+    group: www
