@@ -115,4 +115,15 @@ export const AuthWrapper = styled.div`
     .forgot.signUpLink {
         margin-top: 20px !important; 
     }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        .auth-sidebar {
+            display: none;
+        }
+        .card-deck .card {
+            margin-bottom:0
+        }
+        .card-deck h1 {
+            font-size: 24px;
+        }
+    }
 `;
