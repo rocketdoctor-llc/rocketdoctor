@@ -23,8 +23,8 @@ const Header = (props) => {
 						<Link className="nav-link" to="/contact-us">Contact us</Link>
 					</NavBarComp>
 					<div className="text-right">
-						<Button className="outline-btn">Sign In</Button>
-						<Button className="outline-dark-btn">Join Now</Button>
+						<Link to="/login" className="outline-btn btn btn-primary">Sign In</Link>
+						<Link to="/registration" className="outline-dark-btn btn btn-primary">Join Now</Link>
 					</div>
 				</Navbar.Collapse>
 			</Navbar>

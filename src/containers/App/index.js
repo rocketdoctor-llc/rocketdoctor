@@ -7,6 +7,9 @@ import AboutUs from 'containers/AboutUs/aboutUsContainer';
 import Team from 'containers/Team/teamContainer';
 import Careers from 'containers/Careers/careersContainer';
 import ContactUs from 'containers/ContactUs/contactUsContainer';
+import SignIn from 'containers/SignIn/signInContainer';
+import SignUp from 'containers/SignUp/signUpContainer.js';
+import ForgotPassword from 'containers/ForgotPassword/forgotContainer';
 import GlobalStyle from '../../globalStyle';
 
 export default function App() {
@@ -20,6 +23,9 @@ export default function App() {
         <Route exact path="/our-team" component={Team} />
         <Route exact path="/careers" component={Careers} />
         <Route exact path="/contact-us" component={ContactUs} />
+        <Route exact path="/login" component={SignIn} />
+        <Route exact path="/registration" component={SignUp} />
+        <Route exact path="/forgot-password" component={ForgotPassword} />
       </Switch>
       <GlobalStyle />
     </Fragment>
